@@ -20,21 +20,74 @@ img {
 html {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  color: #333;
 }
 
 body {
   background-color: whitesmoke;
   width: 100%;
   height: 100%;
-  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
-  background-color: lightblue;
+  background-color: lightgray;
   max-width: 1440px;
   height: 100vh;
-  position: absolute;
   margin: auto;
   left: 0;
   right: 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  max-width: 100%;
+  min-height: 3rem;
+  font-weight: 700;
+}
+
+.main-nav nav {
+  margin-right: 1rem;
+}
+
+.main-nav .logo {
+  margin-left: 1rem;
+}
+
+.main-nav .logo span {
+  color: crimson;
+}
+
+.main-nav a:active span {
+  color: hsl(348, 83%, 42%);
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.main-nav a:active {
+  color: rgb(216, 216, 216);
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav ul li {
 }
